@@ -56,5 +56,8 @@
 	"simple-git-hooks": {
 		"pre-commit": "bun run lint && bun run type-check"
 	},
-	"types": "./dist/index.d.ts"
+	"types": "./dist/index.d.ts",
+	"dependencies": {
+		"csv-parse": "^6.1.0"
+	}
 }
