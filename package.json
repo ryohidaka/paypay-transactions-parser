@@ -58,6 +58,7 @@
 	},
 	"types": "./dist/index.d.ts",
 	"dependencies": {
-		"csv-parse": "^6.1.0"
+		"csv-parse": "^6.1.0",
+		"zod": "^4.2.1"
 	}
 }
