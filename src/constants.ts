@@ -1,0 +1,31 @@
+export const JP_HEADERS = {
+	取引日: 'date',
+	'出金金額（円）': 'amountOutgoing',
+	'入金金額（円）': 'amountIncoming',
+	海外出金金額: 'amountOutgoingOverseas',
+	通貨: 'currency',
+	'変換レート（円）': 'exchangeRate',
+	利用国: 'countryPaidIn',
+	取引内容: 'transactionType',
+	取引先: 'businessName',
+	取引方法: 'method',
+	支払い区分: 'paymentOption',
+	利用者: 'user',
+	取引番号: 'transactionId',
+}
+
+export const EN_HEADERS = {
+	'Date & Time': 'date',
+	'Amount Outgoing (Yen)': 'amountOutgoing',
+	'Amount Incoming (Yen)': 'amountIncoming',
+	'Amount Outgoing Overseas': 'amountOutgoingOverseas',
+	Currency: 'currency',
+	'Exchange Rate (Yen)': 'exchangeRate',
+	'Country Paid In': 'countryPaidIn',
+	'Transaction Type': 'transactionType',
+	'Business Name': 'businessName',
+	Method: 'method',
+	'Payment Option': 'paymentOption',
+	User: 'user',
+	'Transaction ID': 'transactionId',
+}
