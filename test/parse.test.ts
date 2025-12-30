@@ -10,36 +10,36 @@ describe('parse', () => {
 			const result = parse(csvData)
 			expect(result).toHaveLength(8)
 			expect(result[0]).toEqual({
-				'Date & Time': '2025/01/01 12:00:00',
-				'Amount Outgoing (Yen)': '3,000',
-				'Amount Incoming (Yen)': '-',
-				'Amount Outgoing Overseas': '-',
-				Currency: '-',
-				'Exchange Rate (Yen)': '-',
-				'Country Paid In': '-',
-				'Transaction Type': 'Payment',
-				'Business Name': 'ファミリーマート - 東京ガーデンテラス',
-				Method: 'VISA xxxx',
-				'Payment Option': '-',
-				User: '-',
-				'Transaction ID': '***',
+				date: new Date('2025/01/01 12:00:00'),
+				amountOutgoing: 3000,
+				amountIncoming: 0,
+				amountOutgoingOverseas: 0,
+				currency: null,
+				exchangeRate: 0,
+				countryPaidIn: null,
+				transactionType: 'Payment',
+				businessName: 'ファミリーマート - 東京ガーデンテラス',
+				method: 'VISA xxxx',
+				paymentOption: null,
+				user: null,
+				transactionId: '***',
 			})
 		})
 
 		it('should keep comma-formatted numbers as strings', () => {
 			const result = parse(csvData)
-			expect(result[2]['Amount Outgoing (Yen)']).toBe('30,000')
+			expect(result[2].amountOutgoing).toBe(30000)
 		})
 
 		it("should handle '-' values correctly", () => {
 			const result = parse(csvData)
-			expect(result[3]['Amount Outgoing (Yen)']).toBe('-')
-			expect(result[3]['Amount Incoming (Yen)']).toBe('10,000')
+			expect(result[3].amountOutgoing).toBe(0)
+			expect(result[3].amountIncoming).toBe(10000)
 		})
 
 		it('should parse quoted fields containing commas', () => {
 			const result = parse(csvData)
-			expect(result[4]['Transaction Type']).toBe('Points, Balance Earned')
+			expect(result[4].transactionType).toBe('Points, Balance Earned')
 		})
 
 		it('should throw TypeError for invalid input type', () => {
@@ -60,31 +60,31 @@ describe('parse', () => {
 			const result = parse(csvData)
 			expect(result).toHaveLength(8)
 			expect(result[0]).toEqual({
-				取引日: '2025/01/01 12:00:00',
-				'出金金額（円）': '3,000',
-				'入金金額（円）': '-',
-				海外出金金額: '-',
-				通貨: '-',
-				'変換レート（円）': '-',
-				利用国: '-',
-				取引内容: '支払い',
-				取引先: 'ファミリーマート - 東京ガーデンテラス',
-				取引方法: 'VISA xxxx',
-				支払い区分: '-',
-				利用者: '-',
-				取引番号: '***',
+				date: new Date('2025/01/01 12:00:00'),
+				amountOutgoing: 3000,
+				amountIncoming: 0,
+				amountOutgoingOverseas: 0,
+				currency: null,
+				exchangeRate: 0,
+				countryPaidIn: null,
+				transactionType: '支払い',
+				businessName: 'ファミリーマート - 東京ガーデンテラス',
+				method: 'VISA xxxx',
+				paymentOption: null,
+				user: null,
+				transactionId: '***',
 			})
 		})
 
 		it('should keep comma-formatted numbers as strings', () => {
 			const result = parse(csvData)
-			expect(result[2]['出金金額（円）']).toBe('30,000')
+			expect(result[2].amountOutgoing).toBe(30000)
 		})
 
 		it("should handle '-' values correctly", () => {
 			const result = parse(csvData)
-			expect(result[3]['出金金額（円）']).toBe('-')
-			expect(result[3]['入金金額（円）']).toBe('10,000')
+			expect(result[3].amountOutgoing).toBe(0)
+			expect(result[3].amountIncoming).toBe(10000)
 		})
 
 		it('should throw TypeError for invalid input type', () => {
