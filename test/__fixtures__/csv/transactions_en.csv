@@ -1,0 +1,9 @@
+Date & Time,Amount Outgoing (Yen),Amount Incoming (Yen),Amount Outgoing Overseas,Currency,Exchange Rate (Yen),Country Paid In,Transaction Type,Business Name,Method,Payment Option,User,Transaction ID
+2025/01/01 12:00:00,"3,000",-,-,-,-,-,Payment,ファミリーマート - 東京ガーデンテラス,VISA xxxx,-,-,***
+2025/01/02 12:00:00,"1,000",-,-,-,-,-,Invested,PayPayポイント運用,PayPayポイント,-,-,***
+2025/01/03 12:00:00,"30,000",-,-,-,-,-,Bank Transfer,PayPay銀行 *****,PayPay残高,-,-,***
+2025/01/04 12:00:00,-,"10,000",-,-,-,-,Top-Up,PayPay,Yahoo!フリマ・Yahoo!オークション,-,-,***
+2025/01/05 12:00:00,-,"5,000",-,-,-,-,"Points, Balance Earned",Yahoo!ショッピング,PayPayポイント,-,-,***_***_***
+2025/01/06 12:00:00,"50,000",-,-,-,-,-,Bill Payment,ヤフー,PayPay残高,-,-,***
+2025/01/07 12:00:00,"1,000",-,-,-,-,-,Money Sent,一郎,PayPay残高,-,-,***
+2025/01/08 12:00:00,-,"1,000",-,-,-,-,Money Received,一郎,PayPay残高,-,-,***
