@@ -16,7 +16,7 @@ type CsvOptions = Omit<Options, 'columns'>
  *
  * @example
  * ```typescript
- * import parse from 'paypay-transaction-parser';
+ * import parse from 'paypay-transactions-parser';
  * import fs from 'fs';
  *
  * // Read CSV data (English headers)

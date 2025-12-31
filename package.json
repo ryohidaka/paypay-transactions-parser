@@ -2,9 +2,9 @@
 	"name": "paypay-transactions-parser",
 	"version": "0.1.0",
 	"description": "Node.js library to parse paypay transactions csv",
-	"homepage": "https://github.com/ryohidaka/paypay-transaction-parser#readme",
+	"homepage": "https://github.com/ryohidaka/paypay-transactions-parser#readme",
 	"bugs": {
-		"url": "https://github.com/ryohidaka/paypay-transaction-parser/issues"
+		"url": "https://github.com/ryohidaka/paypay-transactions-parser/issues"
 	},
 	"license": "MIT",
 	"files": [
@@ -12,7 +12,7 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/ryohidaka/paypay-transaction-parser.git"
+		"url": "git+https://github.com/ryohidaka/paypay-transactions-parser.git"
 	},
 	"scripts": {
 		"build": "bunup",
