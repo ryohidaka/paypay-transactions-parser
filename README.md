@@ -1,5 +1,6 @@
 # paypay-transactions-parser
 
+[![NPM Version](https://img.shields.io/npm/v/paypay-transactions-parser?logo=npm)](https://www.npmjs.com/package/paypay-transactions-parser)
 [![CI](https://github.com/ryohidaka/paypay-transactions-parser/actions/workflows/ci.yml/badge.svg)](https://github.com/ryohidaka/paypay-transactions-parser/actions/workflows/ci.yml)
 
 Node.js library to parse paypay transactions csv
