@@ -9,7 +9,7 @@ Node.js library to parse paypay transactions csv
 ## Installation
 
 ```bash
-bun add paypay-transactions-parser
+npm install paypay-transactions-parser
 ```
 
 ## Usage
@@ -27,6 +27,7 @@ console.log(transactions[0]);
 ```
 
 **outputs**
+
 ```
 {
     date: 2025-01-01T12:00:00.000Z,
